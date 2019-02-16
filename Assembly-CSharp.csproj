@@ -63,6 +63,7 @@
     <Compile Include="Assets\scripts\Dictionary.cs" />
     <Compile Include="Assets\scripts\Flash.cs" />
     <Compile Include="Assets\scripts\GameStart.cs" />
+    <Compile Include="Assets\scripts\LaneMove.cs" />
     <Compile Include="Assets\scripts\SceneMove.cs" />
     <Compile Include="Assets\scripts\TypeObject.cs" />
     <Compile Include="Assets\scripts\TypingSystem.cs" />
