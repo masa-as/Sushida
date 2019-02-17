@@ -67,6 +67,7 @@
     <Compile Include="Assets\scripts\SceneMove.cs" />
     <Compile Include="Assets\scripts\TypeObject.cs" />
     <Compile Include="Assets\scripts\TypingSystem.cs" />
+    <None Include="Assets\dictionary.txt" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>/Users/masa/Sushida/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
