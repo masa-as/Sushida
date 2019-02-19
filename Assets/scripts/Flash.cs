@@ -6,7 +6,6 @@ using UniRx;
 
 public class Flash : MonoBehaviour
 {
-
     [SerializeField]
     private float angularFrequency = 6f;
     // 30FPS
@@ -25,13 +24,4 @@ public class Flash : MonoBehaviour
             text.color = color;
         }).AddTo(this);
     }
-
-    private void Update()
-    {
-        if (Input.GetKey(KeyCode.Space))
-        {
-            SceneManager.LoadScene("Game");
-        }
-    }
-
 }

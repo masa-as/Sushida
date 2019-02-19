@@ -321,7 +321,7 @@ GameObject:
   - component: {fileID: 560197985}
   - component: {fileID: 560197988}
   m_Layer: 5
-  m_Name: Button
+  m_Name: start
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -386,7 +386,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 560197988}
         m_MethodName: GoSelect
         m_Mode: 1
         m_Arguments:
@@ -460,7 +460,7 @@ GameObject:
   - component: {fileID: 1227869855}
   - component: {fileID: 1227869854}
   m_Layer: 5
-  m_Name: Text
+  m_Name: title
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

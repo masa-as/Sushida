@@ -26,7 +26,7 @@ public class LaneMove : MonoBehaviour
         Transform laneTransform2 = lane2.transform;
         Vector3 lanePos = laneTransform.position;
         Vector3 lanePos1 = laneTransform1.position;
-        Vector3 lanePos2 = laneTransform2.position;
+        Vector3 lanePos2 = laneTransform2.position; 
         lane.transform.Translate(lane_speed, 0, 0);
         lane1.transform.Translate(lane_speed, 0, 0);
         lane2.transform.Translate(lane_speed, 0, 0);

@@ -5,6 +5,11 @@ using UnityEngine.SceneManagement;
 
 public class SceneMove : MonoBehaviour
 {
+    public void GoTitle()
+    {
+        SceneManager.LoadScene("Title");
+    }
+
     public void GoSelect()
     {
         SceneManager.LoadScene("Select");
@@ -14,17 +19,4 @@ public class SceneMove : MonoBehaviour
     {
         SceneManager.LoadScene("StartBefore");
     }
-
-    // Start is called before the first frame update
-    void Start()
-    {
-    
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
 }
