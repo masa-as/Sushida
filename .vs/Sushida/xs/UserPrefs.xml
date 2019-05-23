@@ -1,12 +1,11 @@
 ﻿<Properties StartupConfiguration="{C7C9A02D-1BDE-3FCB-81C5-ED3D46864C6B}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/scripts/ResultAnim.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/scripts/TypingSystem.cs">
     <Files>
-      <File FileName="Assets/scripts/SceneMove.cs" Line="1" Column="1" />
-      <File FileName="Assets/scripts/Flash.cs" Line="27" Column="1" />
-      <File FileName="Assets/scripts/GameStart.cs" Line="1" Column="1" />
-      <File FileName="Assets/scripts/LaneMove.cs" Line="29" Column="53" />
-      <File FileName="Assets/scripts/Timer.cs" Line="1" Column="1" />
-      <File FileName="Assets/scripts/ResultAnim.cs" Line="26" Column="9" />
+      <File FileName="Assets/scripts/ResultAnim.cs" Line="26" Column="6" />
+      <File FileName="Assets/scripts/RendaBarCtrl.cs" Line="20" Column="22" />
+      <File FileName="Assets/scripts/TypeObject.cs" Line="64" Column="1" />
+      <File FileName="Assets/scripts/TypingSystem.cs" Line="114" Column="1" />
+      <File FileName="Assets/scripts/SizeChange.cs" Line="10" Column="50" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />

@@ -6,8 +6,11 @@ public class TypeObject : MonoBehaviour {
 	public TextMesh stringTextMesh;
 	public TextMesh alphabetTextMesh;
 	public Dictionary dictionary;
+    GameObject Slider;
+    RendaBarCtrl rendaBarCtrl;
+    public static　float textLength=0;
 
-	TypingSystem ts;
+    TypingSystem ts;
 
 	string[] keys = {"a", "b", "c", "d", "e", "f", "g", "h", "i", "j", 
 		"k", "l", "m", "n", "o", "p", "q", "r", "s", "t", 
@@ -17,7 +20,9 @@ public class TypeObject : MonoBehaviour {
 	// Use this for initialization
 	void Start () 
 	{
-		ts = new TypingSystem ();
+        Slider = GameObject.Find("Slider");
+        rendaBarCtrl = Slider.GetComponent<RendaBarCtrl>();
+        ts = new TypingSystem ();
 		ts.SetInputString (dictionary.GetRandomWord());
 
 		UpdateText ();
@@ -32,9 +37,15 @@ public class TypeObject : MonoBehaviour {
 			{
 				if (ts.InputKey (key) == 1) 
 				{
+                    //入力成功
+                    rendaBarCtrl.renda -= 0.01f;
 					UpdateText ();
-				}
-				break;
+                }
+                else {
+                    //ミスをしたら
+                    rendaBarCtrl.renda = 1.0f;
+                }
+                break;
 			}
 		}
 		if (ts.isEnded ()) 
@@ -46,7 +57,9 @@ public class TypeObject : MonoBehaviour {
 
 	void UpdateText()
 	{
-		stringTextMesh.text = "<color=red>" + ts.GetInputedString() + "</color>" + ts.GetRestString();
-		alphabetTextMesh.text = "<color=red>" + ts.GetInputedKey() + "</color>" + ts.GetRestKey();
-	}
+		stringTextMesh.text =  ts.GetInputedString() + ts.GetRestString();
+		alphabetTextMesh.text = "<color=#777777>" + ts.GetInputedKey() + "</color>" + ts.GetRestKey();
+        textLength = stringTextMesh.text.Length;
+        //Debug.Log("Length : " + textLength);
+    }
 }

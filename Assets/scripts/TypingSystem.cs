@@ -1,11 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using UnityEngine;
 
 public class TypingSystem {
 
-	//入力する文字列のオリジナル
-	string InputStringOrigin;
+    //入力する文字列のオリジナル
+    string InputStringOrigin;
 	//入力する文字列
 	string InputString;
 	//入力する文字列のオリジナル
