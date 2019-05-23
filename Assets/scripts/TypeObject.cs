@@ -8,7 +8,9 @@ public class TypeObject : MonoBehaviour {
 	public Dictionary dictionary;
     GameObject Slider;
     RendaBarCtrl rendaBarCtrl;
-    public static　float textLength=0;
+    public static float textLength=0;
+    public static int count = 0;
+    public static int miss = 0;
 
     TypingSystem ts;
 
@@ -40,10 +42,12 @@ public class TypeObject : MonoBehaviour {
                     //入力成功
                     rendaBarCtrl.renda -= 0.01f;
 					UpdateText ();
+                    count++;
                 }
                 else {
                     //ミスをしたら
                     rendaBarCtrl.renda = 1.0f;
+                    miss++;
                 }
                 break;
 			}
@@ -53,6 +57,7 @@ public class TypeObject : MonoBehaviour {
 			ts.SetInputString (dictionary.GetRandomWord());
 			UpdateText ();
 		}
+        Debug.Log(count);
 	}
 
 	void UpdateText()
